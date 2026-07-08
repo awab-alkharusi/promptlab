@@ -14,7 +14,7 @@ client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 st.set_page_config(
     page_title="PromptLab",
-    page_icon="../icon.jpg",
+    page_icon="icon.jpg",
     layout="wide"
 )
 
