@@ -14,7 +14,7 @@ client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 st.set_page_config(
     page_title="PromptLab",
-    page_icon="🧪",
+    page_icon="../icon.jpg",
     layout="wide"
 )
 
@@ -106,7 +106,7 @@ def load_history():
     return df
 
 # UI
-st.title("🧪 PromptLab — Prompt Evaluation Framework")
+st.title("PromptLab — Prompt Evaluation Framework")
 st.markdown("Test multiple prompt variations against a task, score outputs automatically, and identify which prompts perform best.")
 st.divider()
 
