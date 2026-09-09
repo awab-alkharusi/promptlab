@@ -66,7 +66,7 @@ Respond ONLY with a JSON object in this exact format, nothing else:
 {{"clarity": 7, "conciseness": 8, "relevance": 9}}
 """
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[{"role": "user", "content": scoring_prompt}],
         temperature=0
     )
