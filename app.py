@@ -47,7 +47,7 @@ def run_prompt(prompt_text, task_input):
             {"role": "user", "content": f"{prompt_text}\n\nInput: {task_input}"}
         ],
         temperature=0.3,
-        max_tokens=500
+        max_completion_tokens=500
     )
     return response.choices[0].message.content.strip()
 
